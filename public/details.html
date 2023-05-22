@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details</title>
+  <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="frontend/styles/main.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="container">
+    <nav class="row navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="frontend/images/logo.png" alt="Logo NOMADE">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-5">
+            <li class="nav-item mx-md-2">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="#">Paket Travel</a>
+            </li>
+            <li class="nav-item dropdown mx-md-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbardrop">
+                <li><a class="dropdown-item" href="#">Link</a></li>
+                <li><a class="dropdown-item" href="#">Link</a></li>
+                <li><a class="dropdown-item" href="#">Link</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="#">Testimoni</a>
+            </li>
+
+          </ul>
+
+          <!-- Mobile Button -->
+          <form action="" class="form-inline d-sm-block d-md-none">
+            <button class="btn btn-login my-2 my-sm-0 px-4">Masuk</button>
+          </form>
+          <!-- Desktop Button -->
+          <form action="" class="form-inline d-none d-md-block">
+            <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">Masuk</button>
+          </form>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <section class="section-detail-header"></section>
+    <section class="section-detail-content">
+      <div class="container">
+        <div class="row">
+          <div class="col p-0">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Details</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 ps-lg-0">
+            <div class="card card-details">
+              <h1>Nusa Penida</h1>
+              <p>Republic of Indonesia Raya</p>
+
+              <div class="gallery">
+                <div class="xzoom-container">
+                  <img src="frontend/images/details_big1.jpg" class="xzoom" id="xzoom-default"
+                    xoriginal="frontend/images/details_big1.jpg">
+                </div>
+
+                <div class="xzoom-thumbs">
+                  <a href="frontend/images/details_big1.jpg">
+                    <img src="frontend/images/details_big1.jpg" class="xzoom-gallery" width="128"
+                      xpreview="frontend/images/details_big1.jpg">
+                  </a>
+
+                  <a href="frontend/images/details_big2.jpg">
+                    <img src="frontend/images/details_big2.jpg" class="xzoom-gallery" width="128"
+                      xpreview="frontend/images/details_big2.jpg">
+                  </a>
+
+                  <a href="frontend/images/details_big3.jpg">
+                    <img src="frontend/images/details_big3.jpg" class="xzoom-gallery" width="128"
+                      xpreview="frontend/images/details_big3.jpg">
+                  </a>
+
+                  <a href="frontend/images/details_big4.jpg">
+                    <img src="frontend/images/details_big4.jpg" class="xzoom-gallery" width="128"
+                      xpreview="frontend/images/details_big4.jpg">
+                  </a>
+                </div>
+
+                <h2>Tentang Wisata</h2>
+                <p>
+                  Nusa Penida is an island South-East of the Indonesian island Bali. Nusa Penida is only a thirty minute
+                  boat ride from Bali. The island’s landscape is beautiful, the diving spots are world class and its
+                  people are very welcoming. Until recently, the island
+                  was still relatively unknown by by tourists.
+                </p>
+                <p>Nusa Penida is an island South-East of the Indonesian island Bali. Nusa Penida is only a thirty
+                  minute boat ride from Bali. The island’s landscape is beautiful, the diving spots are world class and
+                  its people are very welcoming. Until recently, the island
+                  was still relatively unknown by by tourists.</p>
+
+                <div class="features row">
+                  <div class="col-md-4">
+                    <div class="description">
+                      <img src="frontend/images/ic_ticket.png" alt="Event" class="features-image">
+                      <div class="description">
+                        <h3>Featured Event</h3>
+                        <p>Tari Kecak</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="description">
+                      <img src="frontend/images/ic_chat.png" alt="Language" class="features-image">
+                      <div class="description">
+                        <h3>Language</h3>
+                        <p>B. Indonesia</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="description">
+                      <img src="frontend/images/ic_burger.png" alt="Foods" class="features-image">
+                      <div class="description">
+                        <h3>Foods</h3>
+                        <p>Local Foods</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-details card-right">
+              <h2>Members are going</h2>
+              <div class="members my-2">
+                <img src="frontend/images/member 1.png" class="member-image" alt="Member 1">
+                <img src="frontend/images/member 2.png" class="member-image" alt="Member 2">
+                <img src="frontend/images/member 3.png" class="member-image" alt="Member 3">
+                <img src="frontend/images/member 4.png" class="member-image" alt="Member 4">
+                <img src="frontend/images/member 5.png" class="member-image" alt="Member 5">
+              </div>
+              <hr>
+              <h2>Trip Information</h2>
+              <table class="trip-information">
+                <tr>
+                  <th width="50%">Date of Departure</th>
+                  <td width="50%" class="text-right">22 Aug, 2020</td>
+                </tr>
+                <tr>
+                  <th width="50%">Duration</th>
+                  <td width="50%" class="text-right">4D 3N</td>
+                </tr>
+                <tr>
+                  <th width="50%">Type of Trip</th>
+                  <td width="50%" class="text-right">Open Public</td>
+                </tr>
+                <tr>
+                  <th width="50%">Charge</th>
+                  <td width="50%" class="text-right">$80,00/person</td>
+                </tr>
+              </table>
+            </div>
+            <div class=" join-container d-grid">
+              <button class="btn btn-join-now" type="button">
+                Join Now
+              </button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="section-footer mt-5 mb-4 border-top">
+    <div class="container pt-5 pb-5">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-sm-6 col-lg-3">
+              <h5>FEATURES</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Social Media Kit</a></li>
+                <li><a href="#">Affiliate</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <h5>ACCOUNT</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Refund</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Rewards</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <h5>COMPANY</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Media</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <h5>GET CONNECTED</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Jakarta Selatan</a></li>
+                <li><a href="#">Indonesia</a></li>
+                <li><a href="#">0821 - 3556 - 6980</a></li>
+                <li><a href="#">support@nomade.com</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row border-top justify-content-center align-items-center pt-4">
+        <p class="text-center">2022 Copyright Nomade • All Rights Reserved • Made in Jakarta</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="frontend/libraries/jquery/jquery-3.6.0.min.js"></script>
+  <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+  <script src="frontend/libraries/retina-js/retina.min.js"></script>
+  <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.xzoom, .xzoom-gallery').xzoom({
+        zoomWidth: '400',
+        title: false,
+        tint: '#333',
+        zoomWidth: 250,
+        zoomHeight: 250,
+        Xoffset: 10
+      });
+    });
+  </script>
+</body>
+
+</html>
