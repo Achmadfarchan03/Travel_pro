@@ -55,15 +55,24 @@ class TravelPackageController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $item = ModelsTravelPackage::findOrFail($id);
+        return view('pages.admin.travel-package.edit', [
+            'item' => $item
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(TravelPackageRequest $request, string $id)
     {
-        //
+        $data = $request->all();
+        $data['slug'] = Str::slug($request->title);
+
+        $item = ModelsTravelPackage::findOrFail($id);
+        $item->update($data);
+
+        return redirect()->route('travel-package.index');
     }
 
     /**
@@ -71,6 +80,9 @@ class TravelPackageController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $item = ModelsTravelPackage::findOrFail($id);
+        $item->delete();
+
+        return redirect()->route('travel-package.index');
     }
 }
