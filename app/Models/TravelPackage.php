@@ -20,7 +20,7 @@ class TravelPackage extends Model
         'featured_event',
         'languages',
         'foods',
-        'departure_date',
+        'daparture_date',
         'duration',
         'type',
         'price',
