@@ -10,7 +10,6 @@ class TravelPackage extends Model
 {
     use HasFactory, SoftDeletes;
 
-    public $table = "travel-packages";
 
     protected $fillable = [
         'title',
@@ -29,4 +28,8 @@ class TravelPackage extends Model
     protected $hidden = [
         
     ];
+
+    public function galleries() {
+        return $this->hasMany(Gallery::class, 'travel_packages_id', 'id');
+    }
 }
