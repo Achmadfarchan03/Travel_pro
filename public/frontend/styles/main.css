@@ -1,7 +1,13 @@
+:root {
+  --primaryColor: #071F5D;
+  --secondaryColor: #0D1B41;
+  --yellow: #FF9E53;
+}
+
 body {
   background-color: #fff;
   font-family: "Assistant", sans-serif;
-  color: #071F5D;
+  color: var(--primaryColor);
 }
 
 .navbar-brand img {
@@ -9,11 +15,11 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #071F5D;
+  color: var(--primaryColor);
 }
 .navbar-light .navbar-nav .nav-link.active {
   font-weight: bold;
-  color: #071F5D;
+  color: var(--primaryColor);
 }
 
 .btn-navbar-right {
@@ -23,7 +29,7 @@ body {
 }
 
 .btn-login {
-  background-color: #071F5D;
+  background-color: var(--primaryColor);
   color: #ffffff;
 }
 .btn-login:hover {
@@ -34,7 +40,7 @@ body {
 header {
   padding: 180px 165px;
   margin-top: -70px;
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/banner.jpg");
   background-size: cover;
 }
 header h1, header p {
@@ -76,7 +82,7 @@ header .btn-get-started:hover {
 
 .section-popular {
   min-height: 540px;
-  background-color: #0D1B41;
+  background-color: var(--secondaryColor);
   margin-top: -50px;
   margin-bottom: -230px;
 }
@@ -208,7 +214,7 @@ header .btn-get-started:hover {
 }
 .section-footer a {
   text-decoration: none;
-  color: #071F5D;
+  color: var(--primaryColor);
 }
 
 .section-detail-header {
@@ -229,11 +235,11 @@ header .btn-get-started:hover {
   font-size: 20px;
 }
 .section-detail-content .breadcrumb .breadcrumb-item a {
-  color: #071F5D;
+  color: var(--primaryColor);
   text-decoration: none;
 }
 .section-detail-content .breadcrumb .breadcrumb-item.active {
-  color: #071F5D;
+  color: var(--primaryColor);
   font-weight: bold;
 }
 
@@ -312,7 +318,7 @@ header .btn-get-started:hover {
 }
 
 .member .btn-add-now {
-  background-color: #071F5D;
+  background-color: var(--primaryColor);
   color: #ffffff;
   font-size: 18px;
   font-weight: 500;
@@ -321,7 +327,7 @@ header .btn-get-started:hover {
 .trip-information th {
   font-weight: 300;
   font-size: 18px;
-  color: #071F5D;
+  color: var(--primaryColor);
 }
 .trip-information td {
   font-weight: 300;
@@ -329,7 +335,7 @@ header .btn-get-started:hover {
   color: #B1B1B1;
 }
 .trip-information .text-blue {
-  color: #071F5D;
+  color: var(--primaryColor);
   font-weight: bold;
 }
 .trip-information .text-orange {
@@ -346,12 +352,12 @@ header .btn-get-started:hover {
 .bank .bank-item h3 {
   font-weight: 300;
   font-size: 18px;
-  color: #071F5D;
+  color: var(--primaryColor);
   margin-bottom: 0;
 }
 .bank .bank-item p {
   font-size: 16px;
-  color: #071F5D;
+  color: var(--primaryColor);
   margin-bottom: 0;
 }
 .bank .bank-item .description {
@@ -377,7 +383,7 @@ header .btn-get-started:hover {
   color: #787777;
 }
 .success-container .btn-home-page {
-  background-color: #071F5D;
+  background-color: var(--primaryColor);
 }
 .success-container .btn-home-page a {
   text-decoration: none;

@@ -49,16 +49,12 @@
                         <input type="text" class="form-control" name="foods" placeholder="Foods" value="{{ $item->foods }}">
                     </div>
                     <div class="form-group">
-                        <label for="daparture_date">Departure Date</label>
-                        <input type="date" class="form-control" name="daparture_date" placeholder="departure_date" value="{{ $item->daparture_date }}">
+                        <label for="working_hours">Departure Date</label>
+                        <input type="text" class="form-control" name="working_hours" placeholder="Working Hours" value="{{ $item->working_hours }}">
                     </div>
                     <div class="form-group">
-                        <label for="duration">Duration</label>
-                        <input type="text" class="form-control" name="duration" placeholder="Duration" value="{{ $item->title }}">
-                    </div>
-                    <div class="form-group">
-                        <label for="type">Type</label>
-                        <input type="text" class="form-control" name="type" placeholder="Type" value="{{$item->type }}">
+                        <label for="category">Category</label>
+                        <input type="text" class="form-control" name="category" placeholder="Category" value="{{$item->category }}">
                     </div>
                     <div class="form-group">
                         <label for="price">Price</label>

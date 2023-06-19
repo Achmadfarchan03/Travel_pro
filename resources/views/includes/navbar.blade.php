@@ -3,7 +3,7 @@
     <nav class="row navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="{{ url('frontend/images/logo.png') }}" alt="Logo NOMADE">
+          <img src="{{ url('frontend/images/visit-sumenep-logo.png') }}" alt="Logo Visit Sumenep">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,25 +12,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto me-5">
             <li class="nav-item mx-md-2">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="{{ route('home') }}">Home</a>
             </li>
             <li class="nav-item mx-md-2">
-              <a class="nav-link" href="#">Paket Travel</a>
-            </li>
-            <li class="nav-item dropdown mx-md-2">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Services
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbardrop">
-                <li><a class="dropdown-item" href="#">Link</a></li>
-                <li><a class="dropdown-item" href="#">Link</a></li>
-                <li><a class="dropdown-item" href="#">Link</a></li>
-              </ul>
+              <a class="nav-link" href="#">Daftar Wisata</a>
             </li>
             <li class="nav-item mx-md-2">
-              <a class="nav-link" href="#">Testimoni</a>
+              <a class="nav-link" href="#testimonialHeading">Testimoni</a>
             </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="{{ route('pesanan-saya')}}">Pesanan Saya</a>
+            </li>
+      
 
           </ul>
 

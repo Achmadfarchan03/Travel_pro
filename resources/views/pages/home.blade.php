@@ -9,14 +9,14 @@ NOMADE
 <!-- Header -->
 <header class="text-center">
     <h1>
-      Explore The Beautiful World
+      Explore Keindahan Pulau Madura
       <br>
-      As Easy One Click
+      Bersama Kab. Sumenep
     </h1>
     <p class="mt-3">
-      You will see beautiful
-      <br>
-      moment you never see before
+        Dinas Kebudayaan, Kepemudaan dan Olahraga serta Pariwisata  
+        <br>
+        Pemerintah Kabupaten Sumenep
     </p>
     <a href="#popular" class="btn btn-get-started px-4 mt-4">
       Get Started
@@ -57,7 +57,7 @@ NOMADE
             <p class="mt-3">
             Something that you never try
             <br>
-            before in this world
+            before in Madura Island
             </p>
         </div>
         </div>
@@ -71,7 +71,7 @@ NOMADE
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card-travel text-center d-flex flex-column"
                 style="background-image: url('{{ $item->galleries->count() ? Storage::url($item->galleries->first()->image) : '' }}');">
-                <div class="travel-country">{{ $item->location }}</div>
+                <div class="travel-country">Sumenep</div>
                 <div class="travel-location">{{ $item->title }}</div>
                 <div class="travel-button mt-auto">
                     <a href="{{ route('detail', $item->slug) }}" class="btn btn-travel-details px-4">
@@ -96,18 +96,18 @@ NOMADE
                 more than just a trip
             </p>
             </div>
-            <div class="col-sm-6 col-md-2">
-            <img src="frontend/images/networks-1.png" alt="ANA Company">
+            <div class="col-sm-6 col-md-2 me-5">
+            <img src="frontend/images/logo-gojek.png" alt="ANA Company">
             </div>
-            <div class="col-sm-6 col-md-2">
-            <img src="frontend/images/networks-2.png" alt="Disney">
+            <div class="col-sm-6 col-md-2 me-5">
+            <img src="frontend/images/logo-tiketcom.png" alt="Disney">
             </div>
-            <div class="col-sm-6 col-md-2">
-            <img src="frontend/images/networks-3.png" alt="S Company">
+            <div class="col-sm-6 col-md-2 me-5">
+            <img src="frontend/images/logo-pojur.png" alt="S Company">
             </div>
-            <div class="col-sm-6 col-md-2">
+            {{-- <div class="col-sm-6 col-md-2">
             <img src="frontend/images/networks-4.png" alt="VISA">
-            </div>
+            </div> --}} 
         </div>
         </div>
     </section>
@@ -133,8 +133,8 @@ NOMADE
             <div class="col-sm-6 col-lg-4">
                 <div class="card card-testimonial text-center">
                 <div class="testimonial-content">
-                    <img src="frontend/images/pic-testi-1.png" class="mb-3" alt="Testi 1">
-                    <h3 class="mb-4">Angga Rizky</h3>
+                    <img src="" class="mb-3" alt="Testi 1">
+                    <h3 class="mb-4">Puspitasari</h3>
                     <p class="testimonial">
                     “ It was glorious and I could
                     not stop to say wohooo
@@ -151,8 +151,8 @@ NOMADE
             <div class="col-sm-6 col-lg-4">
                 <div class="card card-testimonial text-center">
                 <div class="testimonial-content">
-                    <img src="frontend/images/pic-testi-1.png" class="mb-3" alt="Testi 1">
-                    <h2 class="mb-4">Angga Rizky</h2>
+                    <img src="" class="mb-3" alt="Testi 1">
+                    <h2 class="mb-4">Stevano Rizky</h2>
                     <p class="testimonial">
                     “ It was glorious and I could
                     not stop to say wohooo
@@ -169,8 +169,8 @@ NOMADE
             <div class="col-sm-6 col-lg-4">
                 <div class="card card-testimonial text-center">
                 <div class="testimonial-content">
-                    <img src="frontend/images/pic-testi-1.png" class="mb-3" alt="Testi 1">
-                    <h3 class="mb-4">Angga Rizky</h3>
+                    <img src="" class="mb-3" alt="Testi 1">
+                    <h3 class="mb-4">Ernando Ari</h3>
                     <p class="testimonial">
                     “ It was glorious and I could
                     not stop to say wohooo

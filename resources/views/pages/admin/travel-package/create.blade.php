@@ -49,16 +49,17 @@
                         <input type="text" class="form-control" name="foods" placeholder="Foods" value="{{ old('foods') }}">
                     </div>
                     <div class="form-group">
-                        <label for="daparture_date">Departure Date</label>
-                        <input type="date" class="form-control" name="daparture_date" placeholder="departure_date" value="{{ old('daparture_date') }}">
+                        <label for="working_hours">Working Hours</label>
+                        <input type="text" class="form-control" name="working_hours" placeholder="Working Hours" value="{{ old('working_hours') }}">
                     </div>
                     <div class="form-group">
-                        <label for="duration">Duration</label>
-                        <input type="text" class="form-control" name="duration" placeholder="Duration" value="{{ old('duration') }}">
-                    </div>
-                    <div class="form-group">
-                        <label for="type">Type</label>
-                        <input type="text" class="form-control" name="type" placeholder="Type" value="{{ old('type') }}">
+                        <label for="category">Category</label>
+                        <select name="category" class="form-control" required>
+                            <option value="{{ old('category') }}" hidden>--Pilih Kategori--</option>
+                            <option value="Rekreasi dan Hiburan">Rekreasi dan Hiburan</option>
+                            <option value="Wisata Alam">Wisata Alam</option>
+                            <option value="Sejarah dan Budaya">Sejarah dan Budaya</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="price">Price</label>

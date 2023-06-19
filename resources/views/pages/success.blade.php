@@ -10,7 +10,7 @@
         please read it as well
         </p>
         <button class="btn btn-home-page px-4 mt-2">
-        <a href="{{ url('/') }}">Home Page</a>
+        <a href="{{ route('home') }}">Home Page</a>
         </button>
 </section>
 </main>

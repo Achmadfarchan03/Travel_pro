@@ -82,35 +82,29 @@
             <div class="card card-details card-right">
               <h2>Members are going</h2>
               <div class="members my-2">
-                <img src="frontend/images/member 1.png" class="member-image" alt="Member 1">
-                <img src="frontend/images/member 2.png" class="member-image" alt="Member 2">
-                <img src="frontend/images/member 3.png" class="member-image" alt="Member 3">
-                <img src="frontend/images/member 4.png" class="member-image" alt="Member 4">
-                <img src="frontend/images/member 5.png" class="member-image" alt="Member 5">
+                <img src="{{url('frontend/images/member 1.png')}}" class="member-image" alt="Member 1">
+                <img src="{{url('frontend/images/member 2.png')}}" class="member-image" alt="Member 2">
+                <img src="{{url('frontend/images/member 3.png')}}" class="member-image" alt="Member 3">
+                <img src="{{url('frontend/images/member 4.png')}}" class="member-image" alt="Member 4">
+                <img src="{{url('frontend/images/member 5.png')}}" class="member-image" alt="Member 5">
               </div>
               <hr>
               <h2>Trip Information</h2>
               <table class="trip-information">
                 <tr>
-                  <th width="50%">Date of Departure</th>
-                  <td width="50%" class="text-right"> {{ \Carbon\Carbon::create($item->date_of_departure)->format('F n, Y') }} </td>
+                  <th width="50%">Jam Kerja</th>
+                  <td width="50%" class="text-right"> {{ $item->working_hours }} </td>
                 </tr>
                 <tr>
-                  <th width="50%">Duration</th>
+                  <th width="50%">Category of Trip</th>
                   <td width="50%" class="text-right">
-                    {{ $item->duration}}
-                  </td>
-                </tr>
-                <tr>
-                  <th width="50%">Type of Trip</th>
-                  <td width="50%" class="text-right">
-                    {{ $item->type}}
+                    {{ $item->category}}
                   </td>
                 </tr>
                 <tr>
                   <th width="50%">Charge</th>
                   <td width="50%" class="text-right">
-                    ${{ $item->price}},00 / person
+                    Rp{{ $item->price }} / orang
                   </td>
                 </tr>
               </table>

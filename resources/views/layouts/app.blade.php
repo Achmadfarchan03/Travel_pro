@@ -8,6 +8,7 @@
   <title>@yield('title')</title>
   @stack('prepend-style')
   @include('includes.style')
+  <link href="{{ url('backend/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
   @stack('addon-style')
 </head>
 

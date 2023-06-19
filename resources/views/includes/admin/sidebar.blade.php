@@ -1,9 +1,9 @@
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #071F5D">
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('dashboard') }}">
-        <div class="sidebar-brand-text mx-3">NOMADE Admin</div>
+        <div class="sidebar-brand-text mx-3">Sumenep Wonderful Admin</div>
     </a>
 
     <!-- Divider -->

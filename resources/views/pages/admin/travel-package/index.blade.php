@@ -23,8 +23,8 @@
                                 <th>ID</th>
                                 <th>Title</th>
                                 <th>Location</th>
-                                <th>Type</th>
-                                <th>Departure Date</th>
+                                <th>Category</th>
+                                <th>Working Hours</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -34,8 +34,8 @@
                                     <td>{{ $item->id }}</td>
                                     <td>{{ $item->title }}</td>
                                     <td>{{ $item->location }}</td>
-                                    <td>{{ $item->type }}</td>
-                                    <td>{{ $item->daparture_date }}</td>
+                                    <td>{{ $item->category }}</td>
+                                    <td>{{ $item->working_hours }}</td>
                                     <td>
                                         <a href="{{ route('travel-package.edit', $item->id) }}" class="btn btn-info">
                                             <i class="fa fa-pencil-alt"></i>

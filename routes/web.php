@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\TravelPackageController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MyOrderController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -26,6 +27,9 @@ Route::get('/', [HomeController::class, 'index'])
 
 Route::get('/detail/{slug}', [DetailController::class, 'index']) 
     -> name('detail');
+
+Route::get('/pesanan-saya', [MyOrderController::class, 'index'])
+    -> name('pesanan-saya');
 
 Route::post('/checkout/{id}', [CheckoutController::class, 'process'])
     -> name('checkout_process')

@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('travel-packages', function (Blueprint $table) {
+        Schema::create('travel_packages', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('slug');
@@ -20,9 +20,8 @@ return new class extends Migration
             $table->string('featured_event');
             $table->string('languages');
             $table->string('foods');
-            $table->date('daparture_date');
-            $table->string('duration');
-            $table->string('type');
+            $table->date('departure_date');
+            $table->string('category');
             $table->integer('price');
             $table->softDeletes();
             $table->timestamps();

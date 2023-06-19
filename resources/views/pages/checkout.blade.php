@@ -183,7 +183,7 @@
               </p>
               <div class="bank">
                 <div class="bank-item pb-3">
-                  <img src="frontend/images/logo atm.png" alt="Logo ATM" class="bank-image">
+                  <img src="{{url('frontend/images/logo atm.png')}}" alt="Logo ATM" class="bank-image">
                   <div class="description">
                     <h3>PT Nomade Indonesia</h3>
                     <p>
@@ -195,7 +195,7 @@
                   <div class="clearfix"></div>
                 </div>
                 <div class="bank-item pb-3">
-                  <img src="frontend/images/logo atm.png" alt="Logo ATM" class="bank-image">
+                  <img src="{{url('frontend/images/logo atm.png')}}" alt="Logo ATM" class="bank-image">
                   <div class="description">
                     <h3>PT Nomade Indonesia</h3>
                     <p>
