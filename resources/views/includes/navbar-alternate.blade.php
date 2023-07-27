@@ -10,7 +10,7 @@
         <ul class="navbar-nav me-auto d-none d-lg-block">
           <li>
             <span class="text-muted">
-              | &nbsp; Nikmati Liburanmu Bersama Sumenep Wonderful
+              | &nbsp; Nikmati Liburanmu Bersama Pesona Indonesia
             </span>
           </li>
         </ul>

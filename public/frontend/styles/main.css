@@ -1,12 +1,12 @@
 :root {
   --primaryColor: #071F5D;
-  --secondaryColor: #0D1B41;
-  --yellow: #FF9E53;
+  --secondaryColor: #192341;
+  --yellow: #eb914c;
 }
 
 body {
   background-color: #fff;
-  font-family: "Assistant", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--primaryColor);
 }
 
@@ -38,17 +38,17 @@ body {
 }
 
 header {
-  padding: 180px 165px;
+  padding: 250px 165px;
   margin-top: -70px;
-  background-image: url("../images/banner.jpg");
+  background-image: url("../images/bromo2.jpg");
   background-size: cover;
 }
 header h1, header p {
   color: #ffffff;
 }
 header h1 {
-  font-family: "Playfair Display", sans-serif;
-  font-size: 50px;
+  font-family: "Pooppins", sans-serif;
+  font-size: 60px;
   font-weight: bold;
 }
 header p {
@@ -91,7 +91,7 @@ header .btn-get-started:hover {
   margin-top: 150px;
 }
 .section-popular .section-popular-heading h2 {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 40px;
 }
@@ -129,7 +129,7 @@ header .btn-get-started:hover {
   margin-top: 80px;
 }
 .section-networks h2 {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: bold;
 }
@@ -147,7 +147,7 @@ header .btn-get-started:hover {
   padding-top: 50px;
 }
 .section-testimonial-heading h2 {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: bold;
 }
@@ -219,7 +219,7 @@ header .btn-get-started:hover {
 
 .section-detail-header {
   min-height: 310px;
-  background: #DAE0EE;
+  background: #192341;
   margin-top: -70px;
 }
 

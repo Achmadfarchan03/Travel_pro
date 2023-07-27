@@ -125,7 +125,7 @@
                   </a>
               @endguest
             </div>
-            
+
           </div>
         </div>
     </section>
@@ -143,7 +143,7 @@
 <script>
   $(document).ready(function () {
     $('.xzoom, .xzoom-gallery').xzoom({
-      zoomWidth: '400',
+    //   zoomWidth: '1000',
       title: false,
       tint: '#333',
       zoomWidth: 250,

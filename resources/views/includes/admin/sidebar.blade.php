@@ -3,7 +3,7 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('dashboard') }}">
-        <div class="sidebar-brand-text mx-3">Sumenep Wonderful Admin</div>
+        <div class="sidebar-brand-text mx-3">Travel Admin</div>
     </a>
 
     <!-- Divider -->

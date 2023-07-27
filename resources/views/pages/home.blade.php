@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-NOMADE
+Kelompok 2
 @endsection
 
 @section('content')
@@ -9,21 +9,20 @@ NOMADE
 <!-- Header -->
 <header class="text-center">
     <h1>
-      Explore Keindahan Pulau Madura
+      Explore Keindahan Indonesia
       <br>
-      Bersama Kab. Sumenep
     </h1>
     <p class="mt-3">
-        Dinas Kebudayaan, Kepemudaan dan Olahraga serta Pariwisata  
+        Dinas Kebudayaan, Kepemudaan dan Olahraga serta Pariwisata
         <br>
-        Pemerintah Kabupaten Sumenep
+        Pemerintah Indonesia
     </p>
     <a href="#popular" class="btn btn-get-started px-4 mt-4">
       Get Started
     </a>
 </header>
 <main>
-    <!-- Stats -->
+    {{-- <!-- Stats -->
     <div class="container">
         <section class="section-stats row justify-content-center">
         <div class="col-3 col-md-2 stats-detail">
@@ -43,7 +42,7 @@ NOMADE
             <p>Partners</p>
         </div>
         </section>
-    </div>
+    </div> --}}
 
     <!-- Wisata Popular -->
 
@@ -71,7 +70,7 @@ NOMADE
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card-travel text-center d-flex flex-column"
                 style="background-image: url('{{ $item->galleries->count() ? Storage::url($item->galleries->first()->image) : '' }}');">
-                <div class="travel-country">Sumenep</div>
+                <div class="travel-country">Indonesia</div>
                 <div class="travel-location">{{ $item->title }}</div>
                 <div class="travel-button mt-auto">
                     <a href="{{ route('detail', $item->slug) }}" class="btn btn-travel-details px-4">
@@ -85,7 +84,7 @@ NOMADE
     </div>
     </section>
 
-    <section class="section-networks mb-5" id="networks">
+    {{-- <section class="section-networks mb-5" id="networks">
         <div class="container">
         <div class="row align-items-center">
             <div class="col-md-4">
@@ -107,10 +106,10 @@ NOMADE
             </div>
             {{-- <div class="col-sm-6 col-md-2">
             <img src="frontend/images/networks-4.png" alt="VISA">
-            </div> --}} 
+            </div> --}}
         </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="section-testimonial-heading" id="testimonialHeading">
         <div class="container">
@@ -118,9 +117,9 @@ NOMADE
             <div class="col text-center">
                 <h2>They Are Loving Us</h2>
                 <p>
-                Moments were giving them
+                Momen Liburan Memberikan Mereka
                 <br>
-                the best experience
+                Pengalaman Terbaik.
                 </p>
             </div>
             </div>
@@ -133,54 +132,51 @@ NOMADE
             <div class="col-sm-6 col-lg-4">
                 <div class="card card-testimonial text-center">
                 <div class="testimonial-content">
-                    <img src="" class="mb-3" alt="Testi 1">
-                    <h3 class="mb-4">Puspitasari</h3>
+                    {{-- <img src="" class="mb-3" alt="Testi 1"> --}}
+                    <h3 class="mb-4">Ahmad</h3>
                     <p class="testimonial">
-                    “ It was glorious and I could
-                    not stop to say wohooo
-                    for every single moment
-                    Dankee ”
+                    “ Itu luar biasa dan saya tidak bisa berhenti mengatakan wohooo
+                    untuk setiap momen.
+                    Terima kasih ”
                     </p>
                 </div>
                 <hr>
                 <p class="trip-to mt-2">
-                    Trip to Ubud Bali, Indonesia
+                    Perjalanan ke Ubud Bali, Indonesia
                 </p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-4">
                 <div class="card card-testimonial text-center">
                 <div class="testimonial-content">
-                    <img src="" class="mb-3" alt="Testi 1">
-                    <h2 class="mb-4">Stevano Rizky</h2>
+                    {{-- <img src="" class="mb-3" alt="Testi 1"> --}}
+                    <h2 class="mb-4">Hasan</h2>
                     <p class="testimonial">
-                    “ It was glorious and I could
-                    not stop to say wohooo
-                    for every single moment
-                    Dankee ”
+                    “Itu luar biasa dan saya tidak bisa berhenti mengatakan wohooo
+                    untuk setiap momen.
+                    Terima kasih ”
                     </p>
                 </div>
                 <hr>
                 <p class="trip-to mt-2">
-                    Trip to Ubud Bali, Indonesia
+                    Perjalanan to Ubud Bali, Indonesia
                 </p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-4">
                 <div class="card card-testimonial text-center">
                 <div class="testimonial-content">
-                    <img src="" class="mb-3" alt="Testi 1">
-                    <h3 class="mb-4">Ernando Ari</h3>
+                    {{-- <img src="" class="mb-3" alt="Testi 1"> --}}
+                    <h3 class="mb-4">Mutawakkil</h3>
                     <p class="testimonial">
-                    “ It was glorious and I could
-                    not stop to say wohooo
-                    for every single moment
-                    Dankee ”
+                    “ Itu luar biasa dan saya tidak bisa berhenti mengatakan wohooo
+                    untuk setiap momen.
+                    Terima kasih ”
                     </p>
                 </div>
                 <hr>
                 <p class="trip-to mt-2">
-                    Trip to Ubud Bali, Indonesia
+                    Perjalanan to Ubud Bali, Indonesia
                 </p>
                 </div>
             </div>
@@ -188,7 +184,7 @@ NOMADE
             <div class="row mt-3">
                 <div class="col-12 text-center">
                     <a href="#" class="btn btn-need-help px-4 me-4">Need Help</a>
-                    <a href="{{ route('register') }}" class="btn btn-get-started px-4">Get Started</a>
+                    <a href="{{ route('register')}}" class="btn btn-get-started px-4">Get Started</a>
                 </div>
             </div>
         </div>

@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Exports\TransaksiExport;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\TransactionRequest;
 use App\Http\Requests\Admin\TravelPackageRequest;
 use App\Models\Transaction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Maatwebsite\Excel\Facades\Excel;
 
 class TransactionController extends Controller
 {
@@ -19,7 +21,7 @@ class TransactionController extends Controller
         $items = Transaction::with([
             'details', 'travel_package', 'user'
         ])->get();
- 
+
         return view('pages.admin.transaction.index', [
             'items' => $items
         ]);
@@ -92,5 +94,9 @@ class TransactionController extends Controller
         $item->delete();
 
         return redirect()->route('transaction.index');
+    }
+
+    public function exportexcel(){
+        return Excel::download(new TransaksiExport, 'Transksi.xlsx');
     }
 }

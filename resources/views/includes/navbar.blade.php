@@ -1,9 +1,9 @@
 <!-- Navbar -->
 <div class="container">
-    <nav class="row navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="row navbar navbar-expand-lg navbar-dark ">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="{{ url('frontend/images/visit-sumenep-logo.png') }}" alt="Logo Visit Sumenep">
+          <img src="{{ url('frontend/images/logo-itts-putih.png') }}"  alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +15,7 @@
               <a class="nav-link active" href="{{ route('home') }}">Home</a>
             </li>
             <li class="nav-item mx-md-2">
-              <a class="nav-link" href="#">Daftar Wisata</a>
+              <a class="nav-link" href="#popularContent">Daftar Wisata</a>
             </li>
             <li class="nav-item mx-md-2">
               <a class="nav-link" href="#testimonialHeading">Testimoni</a>
@@ -23,7 +23,7 @@
             <li class="nav-item mx-md-2">
               <a class="nav-link" href="{{ route('pesanan-saya')}}">Pesanan Saya</a>
             </li>
-      
+
 
           </ul>
 
@@ -34,7 +34,7 @@
           </form>
           <!-- Desktop Button -->
           <form class="form-inline d-none d-md-block">
-            <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4" type="button" onclick="event.preventDefault(); location.href='{{url('login')}}'">Masuk</button>
+            <button type="button" class="btn btn-primary" onclick="event.preventDefault(); location.href='{{url('login')}}'">Masuk</button>
           </form>
           @endguest
 
@@ -47,7 +47,7 @@
           <!-- Desktop Button -->
           <form class="form-inline d-none d-md-block" action="{{url('logout')}}" method="POST">
             @csrf
-            <button class="btn btn-danger btn-navbar-right my-2 my-sm-0 px-4">Keluar</button>
+            <button type="button" class="btn btn-danger" Secondary id="keluar">Keluar</button>
           </form>
           @endauth
 

@@ -33,20 +33,20 @@
             <div class="col-sm-6 col-lg-3">
                 <h5>GET CONNECTED</h5>
                 <ul class="list-unstyled">
-                <li><a href="#">Sumenep, Jawa Timur</a></li>
+                <li><a href="#">Surabaya, Jawa Timur</a></li>
                 <li><a href="#">Indonesia</a></li>
-                <li><a href="#">0821 - 3556 - 6980</a></li>
-                <li><a href="#">support@sumenepwonderful.com</a></li>
+                <li><a href="#">0821 - 1234 - 1234</a></li>
+                <li><a href="#">support@Kelompok2wonderful.com</a></li>
                 </ul>
             </div>
             </div>
-            
+
         </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row border-top justify-content-center align-items-center pt-4">
-        <p class="text-center">2022 Copyright Sumenep • All Rights Reserved • Made in Sumenep</p>
+        <p class="text-center">2023 Copyright Kelompok 2</p>
         </div>
     </div>
 </footer>

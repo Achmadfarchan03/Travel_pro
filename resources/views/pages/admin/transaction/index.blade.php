@@ -9,6 +9,9 @@
             <h1 class="h3 mb-0 text-gray-800">Transaksi</h1>
         </div>
 
+        <div class="col-auto">
+            <a href="/exportexcel" class="btn btn-success">Export Excel</a>
+        </div>
 
         <!-- Content Row -->
         <div class="row">

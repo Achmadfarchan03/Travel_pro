@@ -107,7 +107,7 @@
 
   <script>
     var chart = <?php echo json_encode($data); ?>;
-    
+
     console.log(chart);
     var labels = []
     var dataset = []

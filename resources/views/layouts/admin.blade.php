@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>NOMADE Admin</title>
+    <title>Travel Admin</title>
 
     @include('includes.admin.style')
 
