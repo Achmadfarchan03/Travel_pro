@@ -11,8 +11,8 @@
           <div class="col p-0">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="home.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Details</li>
+                <li class="breadcrumb-item"><a href="home.html" style="color: white;">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page" style="color: white;">Details</li>
               </ol>
             </nav>
           </div>
@@ -80,7 +80,7 @@
           </div>
           <div class="col-lg-4">
             <div class="card card-details card-right">
-              <h2>Members are going</h2>
+              {{-- <h2>Members are going</h2>
               <div class="members my-2">
                 <img src="{{url('frontend/images/member 1.png')}}" class="member-image" alt="Member 1">
                 <img src="{{url('frontend/images/member 2.png')}}" class="member-image" alt="Member 2">
@@ -88,21 +88,21 @@
                 <img src="{{url('frontend/images/member 4.png')}}" class="member-image" alt="Member 4">
                 <img src="{{url('frontend/images/member 5.png')}}" class="member-image" alt="Member 5">
               </div>
-              <hr>
-              <h2>Trip Information</h2>
+              <hr> --}}
+              <h2>Informasi Wisata</h2>
               <table class="trip-information">
                 <tr>
-                  <th width="50%">Jam Kerja</th>
+                  <th width="50%">Estimasi Tour</th>
                   <td width="50%" class="text-right"> {{ $item->working_hours }} </td>
                 </tr>
                 <tr>
-                  <th width="50%">Category of Trip</th>
+                  <th width="50%">Kategori</th>
                   <td width="50%" class="text-right">
                     {{ $item->category}}
                   </td>
                 </tr>
                 <tr>
-                  <th width="50%">Charge</th>
+                  <th width="50%">Harga</th>
                   <td width="50%" class="text-right">
                     Rp{{ $item->price }} / orang
                   </td>
@@ -114,7 +114,7 @@
               <form action=" {{ route('checkout_process', $item->id) }} " method="post">
                 @csrf
                 <button class="btn btn-block btn-join-now px-5" type="submit">
-                  Join Now
+                  Pesan Sekarang
                 </button>
               </form>
               @endauth

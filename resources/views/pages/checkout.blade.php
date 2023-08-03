@@ -5,15 +5,15 @@
 
 <main>
     <section class="section-detail-header"></section>
-    <section class="section-detail-content">
+    <section class="section-detail-content ">
       <div class="container">
         <div class="row">
           <div class="col p-0">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="home.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="details.html">Details</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                <li class="breadcrumb-item"><a href="home.html" style="color: white;">Home</a></li>
+                <li class="breadcrumb-item"><a href="details.html" style="color: white;">Details</a></li>
+                <li class="breadcrumb-item active" aria-current="page" style="color: white;">Checkout</li>
               </ol>
             </nav>
           </div>
@@ -21,7 +21,7 @@
         <div class="row">
           <div class="col-lg-8 ps-lg-0">
             <div class="card card-details">
-              @if ($errors->any()) 
+              @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>
                         @foreach ($errors->all() as $error)
@@ -31,15 +31,15 @@
                 </div>
               @endif
               <h1>Who's Going?</h1>
-              <p>Trip to {{ $item->travel_package->title }}, {{ $item->travel_package->location }} </p>
+              <p>Wisata {{ $item->travel_package->title }}, {{ $item->travel_package->location }} </p>
 
               <div class="attendee">
                 <table class="table table-responsive-sm text-center">
                   <thead>
                     <tr>
-                      <td>Picture</td>
-                      <td>Name</td>
-                      <td>Nationality</td>
+                      <td>Profil</td>
+                      <td>Nama</td>
+                      <td>Negara</td>
                       <td>Visa</td>
                       <td>Passport</td>
                     </tr>
@@ -78,13 +78,13 @@
                 </table>
               </div>
               <div class="member mt-3">
-                <h2 class="fw-bold">Add Member</h2>
+                <h2 class="fw-bold">Tambah Wisatawan</h2>
                 <form class="form-inline" method="post" action="{{ route('checkout-create', $item->id) }}">
                   @method('POST')
                   @csrf
                   <div class="row align-items-center">
                     <div class="col-12 col-md-3">
-                      <label for="username" class="sr-only">Name</label>
+                      <label for="username" class="sr-only">Nama</label>
                       <input
                       type="text"
                       class="form-control mb-2 me-sm-2"
@@ -94,7 +94,7 @@
                       />
                     </div>
                     <div class="col-12 col-md-3">
-                      <label for="nationality" class="sr-only">Nationality</label>
+                      <label for="nationality" class="sr-only">Negara</label>
                       <input
                       type="text"
                       class="form-control mb-2 me-sm-2"
@@ -106,9 +106,9 @@
                     </div>
                     <div class="col-12 col-md-3">
                       <label for="is_visa" class="sr-only">VISA</label>
-                      <select 
-                      name="is_visa" 
-                      id="is_visa" 
+                      <select
+                      name="is_visa"
+                      id="is_visa"
                       class="form-select mb-2 me-sm-2">
                         <option value="" selected>VISA</option>
                         <option value="1">30 Days</option>
@@ -116,29 +116,29 @@
                       </select>
                     </div>
                     <div class="col-12 col-md-3">
-                      <label for="doe_passport" class="sr-only mb-1">DOE Passport</label>
+                      <label for="doe_passport" class="sr-only mb-1">Passport</label>
                       <div class="input-group mb-2 me-sm-2">
-                        <input 
-                        type="text" 
-                        class="form-control datepicker" 
-                        id="doe_passport" 
+                        <input
+                        type="text"
+                        class="form-control datepicker"
+                        id="doe_passport"
                         name="doe_passport"
-                        placeholder="DOE Passport">
+                        placeholder="Passport">
                       </div>
                     </div>
                     <div class="col-12 col-md-3">
                       <button type="submit" class="btn btn-add-now mt-2 px-4">
-                        Add Now
+                        Tambahkan
                       </button>
                     </div>
                   </div>
                 </form>
-                <h3 class="mt-4 mb-0 fw-bold">Note</h3>
+                <h3 class="mt-4 mb-0 fw-bold">Catatan</h3>
                 <p class="disclaimer mb-0 mt-2">
-                  You are only able to invite member that has registered in Nomade.com
+                    Anda hanya dapat mengundang anggota yang telah terdaftar.
                 </p>
               </div>
-              
+
             </div>
           </div>
           <div class="col-lg-4">
@@ -146,31 +146,31 @@
               <h2>Checkout Information</h2>
               <table class="trip-information mt-3">
                 <tr>
-                  <th width="50%">Members</th>
+                  <th width="50%">Anggota</th>
                   <td width="50%" class="text-right">
-                    {{ $item->details->count() }} person
+                    {{ $item->details->count() }} Orang
                   </td>
                 </tr>
                 <tr>
                   <th width="50%">Additional VISA</th>
                   <td width="50%" class="text-right">
-                    ${{ $item->additional_visa }},00
+                    Rp{{ $item->additional_visa }},000
                   </td>
                 </tr>
                 <tr>
-                  <th width="50%">Trip Price</th>
+                  <th width="50%">Harga</th>
                   <td width="50%" class="text-right">
-                    ${{ $item->travel_package->price }},00 / Person
+                    Rp{{ $item->travel_package->price }},000 / Orang
                   </td>
                 </tr>
                 <tr>
-                  <th width="50%">Total Price</th>
+                  <th width="50%">Total Harga</th>
                   <td width="50%" class="text-right">
-                    ${{ $item->transaction_total }},00
+                    Rp{{ $item->transaction_total }},000
                   </td>
                 </tr>
                 <tr>
-                  <th width="50%">Total Pay(+Unique Code)</th>
+                  <th width="50%">Total Pembayaran(+Unique Code)</th>
                   <td width="50%" class="text-right text-total">
                     <span class="text-blue">$ {{ $item->transaction_total }},</span>
                     <span class="text-orange">{{ mt_rand(0,99) }}</span></td>
@@ -185,7 +185,7 @@
                 <div class="bank-item pb-3">
                   <img src="{{url('frontend/images/logo atm.png')}}" alt="Logo ATM" class="bank-image">
                   <div class="description">
-                    <h3>PT Nomade Indonesia</h3>
+                    <h3>PT TravelNesia</h3>
                     <p>
                       Bank Central Asia
                       <br>
@@ -197,7 +197,7 @@
                 <div class="bank-item pb-3">
                   <img src="{{url('frontend/images/logo atm.png')}}" alt="Logo ATM" class="bank-image">
                   <div class="description">
-                    <h3>PT Nomade Indonesia</h3>
+                    <h3>PT TavelNesia</h3>
                     <p>
                       Bank HSBS
                       <br>
@@ -210,12 +210,12 @@
             </div>
             <div class=" join-container d-grid">
               <a href="{{ route('checkout-success', $item->id) }}" class="btn btn-join-now" type="button">
-                I Have Made Payment
+                Bayar Sekarang
               </a>
             </div>
             <div class="text-center mt-3">
               <a href="{{ route('detail', $item->travel_package->slug) }}" class="text-muted">
-                Cancel Booking
+                Batalkan
               </a>
             </div>
           </div>

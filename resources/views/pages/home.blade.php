@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-Kelompok 2
+Travelnesia
 @endsection
 
 @section('content')
@@ -18,7 +18,7 @@ Kelompok 2
         Pemerintah Indonesia
     </p>
     <a href="#popular" class="btn btn-get-started px-4 mt-4">
-      Get Started
+      Lihat Selengkapnya
     </a>
 </header>
 <main>
@@ -74,7 +74,7 @@ Kelompok 2
                 <div class="travel-location">{{ $item->title }}</div>
                 <div class="travel-button mt-auto">
                     <a href="{{ route('detail', $item->slug) }}" class="btn btn-travel-details px-4">
-                    View Details
+                    Lihat Detail
                     </a>
                 </div>
                 </div>
@@ -109,13 +109,13 @@ Kelompok 2
             </div> --}}
         </div>
         </div>
-    </section> --}}
+    </section>
 
     <section class="section-testimonial-heading" id="testimonialHeading">
         <div class="container">
             <div class="row">
             <div class="col text-center">
-                <h2>They Are Loving Us</h2>
+                <h2>Cerita Perjalanan Kami</h2>
                 <p>
                 Momen Liburan Memberikan Mereka
                 <br>
@@ -135,9 +135,7 @@ Kelompok 2
                     {{-- <img src="" class="mb-3" alt="Testi 1"> --}}
                     <h3 class="mb-4">Ahmad</h3>
                     <p class="testimonial">
-                    “ Itu luar biasa dan saya tidak bisa berhenti mengatakan wohooo
-                    untuk setiap momen.
-                    Terima kasih ”
+                    “ Lorem Ipsum is simply dummy text of the printing and typesetting industry. ”
                     </p>
                 </div>
                 <hr>
@@ -152,14 +150,12 @@ Kelompok 2
                     {{-- <img src="" class="mb-3" alt="Testi 1"> --}}
                     <h2 class="mb-4">Hasan</h2>
                     <p class="testimonial">
-                    “Itu luar biasa dan saya tidak bisa berhenti mengatakan wohooo
-                    untuk setiap momen.
-                    Terima kasih ”
+                    “ Lorem Ipsum is simply dummy text of the printing and typesetting industry.”
                     </p>
                 </div>
                 <hr>
                 <p class="trip-to mt-2">
-                    Perjalanan to Ubud Bali, Indonesia
+                    Perjalanan ke Ubud Bali, Indonesia
                 </p>
                 </div>
             </div>
@@ -169,22 +165,20 @@ Kelompok 2
                     {{-- <img src="" class="mb-3" alt="Testi 1"> --}}
                     <h3 class="mb-4">Mutawakkil</h3>
                     <p class="testimonial">
-                    “ Itu luar biasa dan saya tidak bisa berhenti mengatakan wohooo
-                    untuk setiap momen.
-                    Terima kasih ”
+                    “  Lorem Ipsum is simply dummy text of the printing and typesetting industry.”
                     </p>
                 </div>
                 <hr>
                 <p class="trip-to mt-2">
-                    Perjalanan to Ubud Bali, Indonesia
+                    Perjalanan ke Ubud Bali, Indonesia
                 </p>
                 </div>
             </div>
             </div>
             <div class="row mt-3">
                 <div class="col-12 text-center">
-                    <a href="#" class="btn btn-need-help px-4 me-4">Need Help</a>
-                    <a href="{{ route('register')}}" class="btn btn-get-started px-4">Get Started</a>
+                    <a href="#" class="btn btn-need-help px-4 me-4">Bantuan</a>
+                    <a href="{{ route('register')}}" class="btn btn-get-started px-4">Lihat Selengkapnya</a>
                 </div>
             </div>
         </div>

@@ -11,8 +11,8 @@
           <div class="col p-0">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="home.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Pesanan Saya</li>
+                <li class="breadcrumb-item"><a href="home.html" style="color: white;">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page" style="color: white;">Pesanan Saya</li>
               </ol>
             </nav>
           </div>
@@ -33,7 +33,7 @@
                     </thead>
                     <tbody>
                      @forelse ($items as $item)
-                     
+
                      <tr>
                       <td>{{ $item->id }}</td>
                       <td>{{ $item->travel_package->title }}</td>
@@ -47,7 +47,7 @@
                       </td>
                   </tr>
                      @endforelse
-                            
+
                         {{-- @empty
                             <tr>
                                 <td colspan="7" class="text-center">

@@ -2,7 +2,7 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Kemlompok 2</span>
+            <span>Copyright &copy; TravelNesia</span>
         </div>
     </div>
 </footer>

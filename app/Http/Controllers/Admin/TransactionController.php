@@ -97,6 +97,6 @@ class TransactionController extends Controller
     }
 
     public function exportexcel(){
-        return Excel::download(new TransaksiExport, 'Transksi.xlsx');
+        return Excel::download(new TransaksiExport, 'Transaksi.xlsx');
     }
 }
